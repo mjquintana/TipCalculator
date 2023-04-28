@@ -18,7 +18,7 @@
         <form id="form">
           <div class="form-group">
             <label for="totalCost">Total cost:</label>
-            <input type="number" class="form-control" id="totalCost" placeholder="Total">
+            <input type="number" min="0" class="form-control" id="totalCost" placeholder="Total">
           </div>
           <div class="form-group">
             <label for="service">Tip</label>
@@ -33,8 +33,8 @@
             </select>
           </div>
           <div class="form-group">
-            <label for="people">Number of people</label>
-            <input type="number" class="form-control" id="people" placeholder="Number of People">
+            <label for="people">Number of Party</label>
+            <input type="number" min="1" class="form-control" id="people" placeholder="0">
           </div>
           <button type="button" value="Submit" id="tipCalc" class="btn btn-primary">Submit</button>
         </form>
@@ -51,7 +51,7 @@
           <h5 class="modal-title" id="exampleModalLabel">Total Tip</h5>
         </div>
         <div class="modal-body">
-          <p>The tip for each person is: </p>
+          <p>The total tip for each person is: </p>
           <span id="totaltip"></span><small> each</small>
         </div>
         <div class="modal-footer">
